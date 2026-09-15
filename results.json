@@ -1,0 +1,266 @@
+{
+  "seed": 7,
+  "ai_memory_retrieval_top1": 1.0,
+  "params": {
+    "baseline": 213798,
+    "memory_model": 200049
+  },
+  "train_seconds": {
+    "baseline": 20.256449699401855,
+    "memory_model": 6.634544372558594
+  },
+  "history": {
+    "baseline": [
+      {
+        "epoch": 1,
+        "loss": 2.9899284642083304,
+        "valid_exact": 0.0,
+        "valid_value_acc": 0.0
+      },
+      {
+        "epoch": 2,
+        "loss": 1.3811591972623554,
+        "valid_exact": 0.0,
+        "valid_value_acc": 0.0
+      },
+      {
+        "epoch": 3,
+        "loss": 1.1769659301212856,
+        "valid_exact": 0.023076923076923078,
+        "valid_value_acc": 0.023076923076923078
+      },
+      {
+        "epoch": 4,
+        "loss": 1.1451589754649572,
+        "valid_exact": 0.023076923076923078,
+        "valid_value_acc": 0.023076923076923078
+      },
+      {
+        "epoch": 5,
+        "loss": 1.1151330409731184,
+        "valid_exact": 0.007692307692307693,
+        "valid_value_acc": 0.007692307692307693
+      }
+    ],
+    "memory_model": [
+      {
+        "epoch": 1,
+        "loss": 2.3246128048215593,
+        "valid_exact": 0.4076923076923077,
+        "valid_value_acc": 0.7884615384615384
+      },
+      {
+        "epoch": 2,
+        "loss": 0.5229866915089744,
+        "valid_exact": 1.0,
+        "valid_value_acc": 1.0
+      },
+      {
+        "epoch": 3,
+        "loss": 0.10574579109038626,
+        "valid_exact": 1.0,
+        "valid_value_acc": 1.0
+      }
+    ]
+  },
+  "tests": {
+    "in_dist_12": {
+      "baseline": {
+        "exact": 0.028125,
+        "value_acc": 0.028125,
+        "rel_value_acc": 0.0,
+        "project_value_acc": 0.1125,
+        "n": 320
+      },
+      "memory_model": {
+        "exact": 1.0,
+        "value_acc": 1.0,
+        "rel_value_acc": 1.0,
+        "project_value_acc": 1.0,
+        "n": 320
+      },
+      "memory_attention": {
+        "fact_top1": 1.0,
+        "mean_attention_entropy": 0.031679412979972496,
+        "examples": [
+          {
+            "true_fact_id": 21653,
+            "attended_fact_id": 21653,
+            "attention": 0.999116837978363
+          },
+          {
+            "true_fact_id": 21663,
+            "attended_fact_id": 21663,
+            "attention": 0.9982243776321411
+          },
+          {
+            "true_fact_id": 21688,
+            "attended_fact_id": 21688,
+            "attention": 0.9998149871826172
+          }
+        ]
+      }
+    },
+    "scale_32": {
+      "baseline": {
+        "exact": 0.021875,
+        "value_acc": 0.021875,
+        "rel_value_acc": 0.0,
+        "project_value_acc": 0.08974358974358974,
+        "n": 320
+      },
+      "memory_model": {
+        "exact": 1.0,
+        "value_acc": 1.0,
+        "rel_value_acc": 1.0,
+        "project_value_acc": 1.0,
+        "n": 320
+      },
+      "memory_attention": {
+        "fact_top1": 1.0,
+        "mean_attention_entropy": 0.10278651592049622,
+        "examples": [
+          {
+            "true_fact_id": 25533,
+            "attended_fact_id": 25533,
+            "attention": 0.9940545558929443
+          },
+          {
+            "true_fact_id": 25561,
+            "attended_fact_id": 25561,
+            "attention": 0.9889300465583801
+          },
+          {
+            "true_fact_id": 25613,
+            "attended_fact_id": 25613,
+            "attention": 0.9802524447441101
+          }
+        ]
+      }
+    },
+    "scale_64": {
+      "baseline": {
+        "exact": 0.028125,
+        "value_acc": 0.028125,
+        "rel_value_acc": 0.0,
+        "project_value_acc": 0.1232876712328767,
+        "n": 320
+      },
+      "memory_model": {
+        "exact": 1.0,
+        "value_acc": 1.0,
+        "rel_value_acc": 1.0,
+        "project_value_acc": 1.0,
+        "n": 320
+      },
+      "memory_attention": {
+        "fact_top1": 1.0,
+        "mean_attention_entropy": 0.21771641290363145,
+        "examples": [
+          {
+            "true_fact_id": 35731,
+            "attended_fact_id": 35731,
+            "attention": 0.9644685387611389
+          },
+          {
+            "true_fact_id": 35810,
+            "attended_fact_id": 35810,
+            "attention": 0.9016838073730469
+          },
+          {
+            "true_fact_id": 35872,
+            "attended_fact_id": 35872,
+            "attention": 0.982306182384491
+          }
+        ]
+      }
+    },
+    "scale_128": {
+      "baseline": {
+        "exact": 0.021875,
+        "value_acc": 0.021875,
+        "rel_value_acc": 0.0,
+        "project_value_acc": 0.08333333333333333,
+        "n": 320
+      },
+      "memory_model": {
+        "exact": 1.0,
+        "value_acc": 1.0,
+        "rel_value_acc": 1.0,
+        "project_value_acc": 1.0,
+        "n": 320
+      },
+      "memory_attention": {
+        "fact_top1": 1.0,
+        "mean_attention_entropy": 0.3997021545093138,
+        "examples": [
+          {
+            "true_fact_id": 56321,
+            "attended_fact_id": 56321,
+            "attention": 0.9823323488235474
+          },
+          {
+            "true_fact_id": 56397,
+            "attended_fact_id": 56397,
+            "attention": 0.7873149514198303
+          },
+          {
+            "true_fact_id": 56625,
+            "attended_fact_id": 56625,
+            "attention": 0.9828712344169617
+          }
+        ]
+      }
+    }
+  },
+  "examples": [
+    {
+      "kind": "rel",
+      "query": "pergunta qual valor de E16 relacao R5 ?",
+      "expected": "resposta V20 . <eos>",
+      "baseline": "resposta Java . <eos>",
+      "memory_model": "resposta V20 . <eos>",
+      "facts": 64
+    },
+    {
+      "kind": "rel",
+      "query": "pergunta qual valor de E31 relacao R5 ?",
+      "expected": "resposta V75 . <eos>",
+      "baseline": "resposta Java . <eos>",
+      "memory_model": "resposta V75 . <eos>",
+      "facts": 64
+    },
+    {
+      "kind": "rel",
+      "query": "pergunta qual valor de E63 relacao R4 ?",
+      "expected": "resposta V93 . <eos>",
+      "baseline": "resposta Java . <eos>",
+      "memory_model": "resposta V93 . <eos>",
+      "facts": 64
+    },
+    {
+      "kind": "project",
+      "query": "pergunta qual linguagem usa projeto P49 ?",
+      "expected": "resposta Python . <eos>",
+      "baseline": "resposta Java . <eos>",
+      "memory_model": "resposta Python . <eos>",
+      "facts": 64
+    },
+    {
+      "kind": "project",
+      "query": "pergunta qual linguagem usa projeto P61 ?",
+      "expected": "resposta CSharp . <eos>",
+      "baseline": "resposta Java . <eos>",
+      "memory_model": "resposta CSharp . <eos>",
+      "facts": 64
+    },
+    {
+      "kind": "rel",
+      "query": "pergunta qual valor de E16 relacao R7 ?",
+      "expected": "resposta V43 . <eos>",
+      "baseline": "resposta Java . <eos>",
+      "memory_model": "resposta V43 . <eos>",
+      "facts": 64
+    }
+  ]
+}
